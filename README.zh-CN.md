@@ -92,7 +92,6 @@ npm run release
 
 - [开发与验收](docs/DEVELOPMENT.md) · [架构](docs/ARCHITECTURE.md) · [数据模型](docs/DATA-MODEL.md)
 - [交互细节](docs/UX.md) · [更新记录](CHANGELOG.md)
-- [首次发布与社区上架指南](docs/PUBLISHING.zh-CN.md)
 
 ## 许可
 

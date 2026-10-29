@@ -92,7 +92,6 @@ Report issues with your Obsidian version, device/OS, view mode, theme, reproduct
 
 - [Development and acceptance tests](docs/DEVELOPMENT.md) · [Architecture](docs/ARCHITECTURE.md) · [Data model](docs/DATA-MODEL.md)
 - [Interaction details](docs/UX.md) · [Changelog](CHANGELOG.md)
-- [First-publication guide / 首次上架指南](docs/PUBLISHING.zh-CN.md)
 
 ## License
 
