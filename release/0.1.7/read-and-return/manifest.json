@@ -1,0 +1,9 @@
+{
+  "id": "read-and-return",
+  "name": "Read and Return",
+  "version": "0.1.7",
+  "minAppVersion": "1.8.7",
+  "description": "Jump to the top and return to your reading position, with temporary return points and navigation history.",
+  "author": "sroot",
+  "isDesktopOnly": false
+}

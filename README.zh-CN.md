@@ -10,7 +10,7 @@ Read and Return 为 Obsidian 长篇 Markdown 笔记提供临时返回点和位�
 
 **手机优先 · 支持键盘命令 · 不修改 Markdown 正文**
 
-> 发布状态：本项目尚未上架社区插件市场。当前版本为 **0.1.6**；声明最低 Obsidian 版本为 **1.8.7**。真实设备验收仍待完成。
+> 发布状态：本项目尚未上架社区插件市场。当前版本为 **0.1.7**；声明最低 Obsidian 版本为 **1.8.7**。真实设备验收仍待完成。
 
 ## 三步，回到刚才读到的地方
 
@@ -38,7 +38,7 @@ Read and Return 为 Obsidian 长篇 Markdown 笔记提供临时返回点和位�
 
 上架之前，请在测试仓库手动安装：
 
-1. 将 [`release/0.1.6/read-and-return/`](release/0.1.6/read-and-return/) 整个文件夹复制到 `<你的仓库>/.obsidian/plugins/`。
+1. 将 [`release/0.1.7/read-and-return/`](release/0.1.7/read-and-return/) 整个文件夹复制到 `<你的仓库>/.obsidian/plugins/`。
 2. 确认插件文件夹内直接包含 `manifest.json`、`main.js`、`styles.css`，不要多套一层版本目录。
 3. 重新加载 Obsidian，在 **设置 → 第三方插件** 中启用插件。
 4. 手机端需要将相同文件放入手机使用的仓库，并在手机端启用。
@@ -86,7 +86,7 @@ npm ci
 npm run release
 ```
 
-此命令执行 TypeScript 检查、生产构建、自动化测试、版本与打包一致性检查。安装包输出到 `release/0.1.6/read-and-return/`。
+此命令执行 TypeScript 检查、生产构建、自动化测试、版本与打包一致性检查。安装包输出到 `release/0.1.7/read-and-return/`。
 
 发布后，可在本仓库 Issues 中反馈问题。请提供 Obsidian 版本、设备/系统、视图模式、主题、复现步骤，以及不含隐私的最小示例笔记。
 

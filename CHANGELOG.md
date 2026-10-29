@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.7
+
+- Remove the redundant plugin-name settings heading.
+- Validate loaded settings as unknown data before accessing fields.
+- Remove the deprecated slider tooltip call. Older hosts may no longer show a dynamic value tooltip.
+
+Settings search integration (Obsidian 1.13+) and release artifact attestations are not implemented in this release; minimum compatibility remains 1.8.7.
+
 ## 0.1.6
 
 - Use Obsidian's native Setting heading API in the settings tab to comply with community review requirements.

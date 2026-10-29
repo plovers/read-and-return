@@ -7,6 +7,10 @@ type Action = 'toggle' | 'top' | 'bottom' | 'return' | 'set' | 'back' | 'forward
 interface Settings { mobileControl: boolean; desktopControl: boolean; side: 'left' | 'right'; bottom: number }
 const defaults: Settings = { mobileControl: true, desktopControl: false, side: 'right', bottom: 24 };
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
 export default class NoteNavigator extends Plugin {
   settings: Settings = { ...defaults };
   readonly sessions = new SessionStore();
@@ -17,9 +21,9 @@ export default class NoteNavigator extends Plugin {
   private ribbon?: HTMLElement;
 
   async onload() {
-    const data = await this.loadData();
+    const data: unknown = await this.loadData();
     // Only preferences are persisted. Unknown schema versions use safe defaults.
-    if (data?.schemaVersion === 1 && data.settings) {
+    if (isRecord(data) && data.schemaVersion === 1 && isRecord(data.settings)) {
       const saved = data.settings;
       this.settings = {
         mobileControl: typeof saved.mobileControl === 'boolean' ? saved.mobileControl : true,
@@ -203,7 +207,7 @@ class NavigatorSettings extends PluginSettingTab {
   constructor(app: App, private plugin: NoteNavigator) { super(app, plugin); }
   display() {
     this.containerEl.empty();
-    new Setting(this.containerEl).setName('Read and Return').setHeading();
+
     this.containerEl.createEl('p', { text: t("Navigation stays in this session; note content is never changed.") });
     new Setting(this.containerEl).setName(t("Mobile control"))
       .addToggle(toggle => toggle.setValue(this.plugin.settings.mobileControl).onChange(async value => {
@@ -221,7 +225,7 @@ class NavigatorSettings extends PluginSettingTab {
     new Setting(this.containerEl).setName(t("Bottom spacing"))
       .setDesc(t("Mobile reserves at least 96px plus the safe area; increase for taller toolbars."))
       .addSlider(slider => slider.setLimits(Platform.isMobile ? 96 : 8, 160, 8)
-        .setValue(Platform.isMobile ? Math.max(96, this.plugin.settings.bottom) : this.plugin.settings.bottom).setDynamicTooltip()
+        .setValue(Platform.isMobile ? Math.max(96, this.plugin.settings.bottom) : this.plugin.settings.bottom)
         .onChange(async value => { this.plugin.settings.bottom = value; await this.plugin.saveSettings(); }));
   }
 }

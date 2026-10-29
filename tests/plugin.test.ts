@@ -244,3 +244,11 @@ test('entrypoint: non-Markdown command checks are disabled and unknown settings 
   h.plugin.run('top');
   assert.match(h.messages.at(-1)!, /Open a Markdown note/);
 });
+
+test('malformed persisted settings safely retain defaults', async () => {
+  for (const data of [null, 42, [], { schemaVersion: 1, settings: [] }, { schemaVersion: 1, settings: { bottom: '96', mobileControl: 1 } }]) {
+    const h = await harness(data);
+    assert.equal(h.plugin.settings.bottom, 24);
+    assert.equal(h.plugin.settings.mobileControl, true);
+  }
+});
