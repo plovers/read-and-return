@@ -1,4 +1,4 @@
-/* Read & Return v0.1.5 */
+/* Read and Return v0.1.5 */
 "use strict";
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -209,7 +209,7 @@ var chinese = {
   "Go back": "\u4F4D\u7F6E\u540E\u9000",
   "Go forward": "\u4F4D\u7F6E\u524D\u8FDB",
   "Clear note navigation": "\u6E05\u9664\u5F53\u524D\u7B14\u8BB0\u5BFC\u822A\u8BB0\u5F55",
-  "Read & Return navigation menu": "Read & Return \u5BFC\u822A\u83DC\u5355",
+  "Read and Return navigation menu": "Read and Return \u5BFC\u822A\u83DC\u5355",
   "Open a Markdown note first.": "\u8BF7\u5148\u6253\u5F00 Markdown \u7B14\u8BB0",
   "Note navigation cleared.": "\u5DF2\u6E05\u9664\u5F53\u524D\u7B14\u8BB0\u7684\u5BFC\u822A\u8BB0\u5F55",
   "Return point set.": "\u5DF2\u8BBE\u7F6E\u4E34\u65F6\u8FD4\u56DE\u70B9",
@@ -281,7 +281,7 @@ var NoteNavigator = class extends import_obsidian2.Plugin {
         return available;
       } });
     }
-    this.ribbon = this.addRibbonIcon("navigation", t("Read & Return navigation menu"), (event) => this.menu(event));
+    this.ribbon = this.addRibbonIcon("navigation", t("Read and Return navigation menu"), (event) => this.menu(event));
     this.addSettingTab(new NavigatorSettings(this.app, this));
     this.registerEvent(this.app.workspace.on("active-leaf-change", () => this.refresh()));
     this.registerEvent(this.app.workspace.on("file-open", () => this.refresh()));
@@ -357,7 +357,7 @@ var NoteNavigator = class extends import_obsidian2.Plugin {
         session.commit(action, target, current);
       }
     } catch (error) {
-      console.error("Read & Return: navigation failed", error);
+      console.error("Read and Return: navigation failed", error);
       new import_obsidian2.Notice(t("Could not restore; retry after the note loads."));
     } finally {
       this.busy = false;
@@ -398,7 +398,7 @@ var NoteNavigator = class extends import_obsidian2.Plugin {
     const control = this.host.createDiv({ cls: `read-and-return-control is-${this.settings.side}${import_obsidian2.Platform.isMobile ? " is-mobile" : ""}` });
     this.control = control;
     control.setAttribute("role", "group");
-    control.setAttribute("aria-label", "Read & Return");
+    control.setAttribute("aria-label", "Read and Return");
     control.style.setProperty("--nn-bottom", `${this.settings.bottom}px`);
     const returning = !!this.sessions.get(view.file.path).returnPoint;
     const button = control.createEl("button", { cls: "read-and-return-primary" });
@@ -443,7 +443,7 @@ var NavigatorSettings = class extends import_obsidian2.PluginSettingTab {
   }
   display() {
     this.containerEl.empty();
-    this.containerEl.createEl("h2", { text: "Read & Return" });
+    this.containerEl.createEl("h2", { text: "Read and Return" });
     this.containerEl.createEl("p", { text: t("Navigation stays in this session; note content is never changed.") });
     new import_obsidian2.Setting(this.containerEl).setName(t("Mobile control")).addToggle((toggle) => toggle.setValue(this.plugin.settings.mobileControl).onChange(async (value) => {
       this.plugin.settings.mobileControl = value;

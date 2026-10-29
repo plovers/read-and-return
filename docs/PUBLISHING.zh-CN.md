@@ -4,15 +4,15 @@
 
 ## 1. 修改你自己的公开资料
 
-最终名称已确定为 **Read & Return**，插件 ID 为 **read-and-return**，版本保留 **0.1.5**。源码、测试、样式、构建及包路径已统一更新。目录搜索暂未发现此 ID，最终可用性以提交时验证为准。
+最终名称已确定为 **Read and Return**，插件 ID 为 **read-and-return**，版本保留 **0.1.5**。源码、测试、样式、构建及包路径已统一更新。目录搜索暂未发现此 ID，最终可用性以提交时验证为准。
 
 你只需要修改以下个人信息：
 
 | 位置 | 修改内容 |
 | --- | --- |
-| 根目录 `manifest.json` 的 `author` 字段 | 将 `Read & Return contributors` 换成公开作者名 |
+| 根目录 `manifest.json` 的 `author` 字段 | 将 `Read and Return contributors` 换成公开作者名 |
 | 根目录 `manifest.json` 可选 `authorUrl` 字段 | 可添加 `https://github.com/你的用户名`，注意 JSON 逗号 |
-| 根目录 `LICENSE` 第 3 行 | 将 `Read & Return contributors` 换成版权署名 |
+| 根目录 `LICENSE` 第 3 行 | 将 `Read and Return contributors` 换成版权署名 |
 | 下文 Git 命令中的 `YOUR_PUBLIC_NAME` | Git 提交显示名 |
 | 下文 `YOUR_GITHUB_NOREPLY_EMAIL` | GitHub Settings → Emails 中的 noreply 邮箱 |
 | 下文 URL 的 `YOUR_USERNAME/YOUR_REPOSITORY` | GitHub 用户名与仓库名，仓库名建议 read-and-return |

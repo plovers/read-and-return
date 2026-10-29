@@ -10,7 +10,7 @@ const chinese = {
   "Go back": "位置后退",
   "Go forward": "位置前进",
   "Clear note navigation": "清除当前笔记导航记录",
-  "Read & Return navigation menu": "Read & Return 导航菜单",
+  "Read and Return navigation menu": "Read and Return 导航菜单",
   "Open a Markdown note first.": "请先打开 Markdown 笔记",
   "Note navigation cleared.": "已清除当前笔记的导航记录",
   "Return point set.": "已设置临时返回点",

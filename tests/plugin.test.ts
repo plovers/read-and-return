@@ -128,7 +128,7 @@ test('app language selects single-language labels and notices with English fallb
     h.plugin.refresh();
     assert.ok(h.labels.includes(chinese ? '移动端悬浮按钮' : 'Mobile control'));
     assert.ok(h.labels.includes(chinese ? '更多导航操作' : 'More navigation actions'));
-    assert.ok(h.labels.includes(chinese ? 'Read & Return 导航菜单' : 'Read & Return navigation menu'));
+    assert.ok(h.labels.includes(chinese ? 'Read and Return 导航菜单' : 'Read and Return navigation menu'));
     if (!chinese) assert.ok(h.labels.every(label => !/\p{Script=Han}/u.test(label)));
     h.plugin.menu({});
     assert.equal(h.menuItems[0].title, chinese ? '顶部并记住位置' : 'Top');

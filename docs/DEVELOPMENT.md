@@ -1,6 +1,6 @@
 # 开发与验收
 
-首次公开发布流程见 [GitHub 与 Obsidian 社区上架指南](PUBLISHING.zh-CN.md)，包括无旧 Git 历史的初始快照、双语 README、许可证、Release 附件及账号绑定。公开名称为 Read & Return，ID 为 read-and-return。
+首次公开发布流程见 [GitHub 与 Obsidian 社区上架指南](PUBLISHING.zh-CN.md)，包括无旧 Git 历史的初始快照、双语 README、许可证、Release 附件及账号绑定。公开名称为 Read and Return，ID 为 read-and-return。
 
 ## 工具链
 

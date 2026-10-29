@@ -1,8 +1,8 @@
-# Read & Return — 项目开发说明
+# Read and Return — 项目开发说明
 
 ## 1. 项目背景
 
-Read & Return 是一个独立的 Obsidian 插件，主要解决**长笔记中的阅读位置导航问题**。
+Read and Return 是一个独立的 Obsidian 插件，主要解决**长笔记中的阅读位置导航问题**。
 
 实际使用中，尤其是在 Obsidian 手机 App 上阅读较长的笔记时，经常会遇到这样的场景：
 

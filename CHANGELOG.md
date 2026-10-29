@@ -4,7 +4,7 @@
 
 - 将 README 首页改为英文，提供独立简体中文说明和中英文导航流程示意图。
 - 添加 MIT 许可证和 GitHub 首次快照、Release、Obsidian Community 提交指南。
-- 公开名称统一为 Read & Return，ID 为 read-and-return；作者署名待填写，真机验收边界已标明。
+- 公开名称统一为 Read and Return，ID 为 read-and-return；作者署名待填写，真机验收边界已标明。
 - 本次不改变插件运行行为或 0.1.5 版本号。
 
 ## 0.1.5 — 2026-10-28
@@ -53,5 +53,5 @@
 
 验证边界：真实桌面和移动端/iOS UI 测试尚未完成，首次使用建议先在测试仓库按开发文档验收。
 
-公开发布准备补充：名称统一为 Read & Return，ID 为 read-and-return；保留 0.1.5，旧设置不自动迁移。
+公开发布准备补充：名称统一为 Read and Return，ID 为 read-and-return；保留 0.1.5，旧设置不自动迁移。
 

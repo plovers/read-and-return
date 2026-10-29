@@ -51,7 +51,7 @@ export default class NoteNavigator extends Plugin {
         return available;
       } });
     }
-    this.ribbon = this.addRibbonIcon('navigation', t("Read & Return navigation menu"), event => this.menu(event));
+    this.ribbon = this.addRibbonIcon('navigation', t("Read and Return navigation menu"), event => this.menu(event));
     this.addSettingTab(new NavigatorSettings(this.app, this));
     this.registerEvent(this.app.workspace.on('active-leaf-change', () => this.refresh()));
     this.registerEvent(this.app.workspace.on('file-open', () => this.refresh()));
@@ -116,7 +116,7 @@ export default class NoteNavigator extends Plugin {
         session.commit(action, target, current);
       }
     } catch (error) {
-      console.error('Read & Return: navigation failed', error);
+      console.error('Read and Return: navigation failed', error);
       new Notice(t("Could not restore; retry after the note loads."));
     } finally {
       this.busy = false;
@@ -158,7 +158,7 @@ export default class NoteNavigator extends Plugin {
     const control = this.host.createDiv({ cls: `read-and-return-control is-${this.settings.side}${Platform.isMobile ? ' is-mobile' : ''}` });
     this.control = control;
     control.setAttribute('role', 'group');
-    control.setAttribute('aria-label', 'Read & Return');
+    control.setAttribute('aria-label', 'Read and Return');
     control.style.setProperty('--nn-bottom', `${this.settings.bottom}px`);
     const returning = !!this.sessions.get(view.file.path).returnPoint;
     const button = control.createEl('button', { cls: 'read-and-return-primary' });
@@ -203,7 +203,7 @@ class NavigatorSettings extends PluginSettingTab {
   constructor(app: App, private plugin: NoteNavigator) { super(app, plugin); }
   display() {
     this.containerEl.empty();
-    this.containerEl.createEl('h2', { text: 'Read & Return' });
+    this.containerEl.createEl('h2', { text: 'Read and Return' });
     this.containerEl.createEl('p', { text: t("Navigation stays in this session; note content is never changed.") });
     new Setting(this.containerEl).setName(t("Mobile control"))
       .addToggle(toggle => toggle.setValue(this.plugin.settings.mobileControl).onChange(async value => {

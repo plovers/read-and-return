@@ -1,4 +1,4 @@
-# Read & Return
+# Read and Return
 
 **Explore a long note. Come back to where you were.**
 
@@ -6,7 +6,7 @@
 
 ![Jump away and return to your reading position](docs/images/jump-and-return.svg)
 
-Read & Return adds temporary return points and position history to long Markdown notes in Obsidian. Check the beginning, visit another section, or jump to the end—then return to your reading position without searching for it again.
+Read and Return adds temporary return points and position history to long Markdown notes in Obsidian. Check the beginning, visit another section, or jump to the end—then return to your reading position without searching for it again.
 
 **Mobile-first controls · Keyboard commands · No changes to your Markdown**
 
@@ -51,7 +51,7 @@ When upgrading from the local Note Navigator prototype, disable the old plugin f
 
 **On mobile:** the floating control is enabled by default. Use **⋯** for the full menu. Choose the left or right side and adjust bottom spacing in settings. Mobile reserves at least 96 px plus the system safe area; increase spacing up to 160 px for taller toolbars.
 
-**On desktop:** use the ribbon navigation icon or open the command palette and search for `Read & Return`. Assign shortcuts under **Settings → Hotkeys** if you like. The desktop floating control is optional and off by default. No shortcuts are assigned automatically.
+**On desktop:** use the ribbon navigation icon or open the command palette and search for `Read and Return`. Assign shortcuts under **Settings → Hotkeys** if you like. The desktop floating control is optional and off by default. No shortcuts are assigned automatically.
 
 The interface follows Obsidian's language: Simplified Chinese uses Chinese labels; all other languages, including Traditional Chinese, use English. Reload the plugin after changing Obsidian's language to refresh command names.
 
