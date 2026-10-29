@@ -1,57 +1,17 @@
-# 更新记录
+# Changelog
 
-## 未发布 — 公开发布准备
+## 0.1.5 — Initial public release
 
-- 将 README 首页改为英文，提供独立简体中文说明和中英文导航流程示意图。
-- 添加 MIT 许可证和 GitHub 首次快照、Release、Obsidian Community 提交指南。
-- 公开名称统一为 Read and Return，ID 为 read-and-return；作者署名待填写，真机验收边界已标明。
-- 本次不改变插件运行行为或 0.1.5 版本号。
+First public release of **Read and Return** (`read-and-return`).
 
-## 0.1.5 — 2026-10-28
+- Jump to the top or bottom of a note while remembering your reading position, then return with one action.
+- Set one temporary return point per note and navigate bounded back/forward position history.
+- Use mobile floating controls, the desktop ribbon menu, or command-palette actions with optional custom hotkeys.
+- Adjust floating controls independently for desktop and mobile, including side and bottom spacing.
+- Restore positions using text, nearby context, headings, line positions, and scroll ratio fallbacks.
+- Keep navigation state in memory without modifying Markdown; save only appearance preferences in plugin data.
+- Update session records when notes or folders are renamed or moved, and clear records when notes are deleted.
+- Follow Obsidian's interface language: Simplified Chinese labels for Simplified Chinese, English for other languages.
+- Include English and Simplified Chinese documentation and an MIT license.
 
-- 语言选择收紧为仅简体中文保留现有中文文案；繁体中文及其他语言统一使用英文。
-- 命令、菜单、悬浮按钮提示、通知和设置页遵循相同规则，跟随 Obsidian 界面语言。
-- 补充简体语言代码、繁体中文和其他语言回退，以及设置、按钮和通知的回归测试。
-
-## 0.1.4 — 2026-10-27
-
-- 修复阅读视图未到底却提示“已在底部”、导致底部跳转被跳过的问题：区分外层容器与实际正文滚动区域。
-- 容器缺失或尚未布局时不再根据零高度判定已到底；滚动比例捕获与恢复也使用实际阅读滚动区域。
-- 回归测试覆盖不滚动的外层容器、内部长笔记跳转与返回，以及缺失/未布局容器。
-
-## 0.1.3 — 2026-10-26
-
-- ⋯ 菜单新增“跳转到底部”，并提供同名命令；初始主按钮仍为 ↑。
-- 跳到底部时保存当前位置，随后可点击 ↩ 返回；已经在底部时保留原返回点和历史。
-
-## 0.1.2 — 2026-10-17
-
-- 菜单删除重复箭头字符，只保留原生图标。
-- 命令、菜单、按钮提示、通知和设置页跟随 Obsidian 界面语言，中文使用简体中文，其余语言回退英文。
-- 没有返回点和历史时，菜单及命令面板禁用“清除本篇导航”；保留原有返回/后退/前进禁用态。
-- 核对 Gemini 设计评审，记录已实现能力、后续候选及未采纳方案的原因，导航定位和会话语义不变。
-
-## 0.1.1 — 2026-10-16
-
-- 调整移动端悬浮控件位置：底距至少 96px，并叠加系统安全区，为 Obsidian 底部悬浮导航栏预留空间。
-- 已有 24px 等较小底距设置自动受到最低避让距离保护，无需重置设置；左右两侧和阅读/编辑视图均适用，桌面底距不变。
-- 移动端底距滑块显示实际有效值，可在 96–160px 间继续调整。此修复使用固定预留空间，不检测任意弹出菜单或自定义主题工具栏高度。
-
-## 0.1.0 — 2026-10-16
-
-首个实现版本：
-
-- 每篇笔记一个会话内临时返回点。
-- 一键跳到顶部并记住可见位置，随后一键返回；已在顶部时保留原返回点。
-- 有界前进/后退历史，导航分支会清空前进栈。
-- 移动端默认开启的顶部/返回悬浮按钮及更多菜单，桌面可选开启。
-- 命令面板、导航 ribbon 图标、左右侧及底部距离设置。
-- 使用 Markdown 子视图接口支持 Reading View、Live Preview 和 Source Mode；恢复结合文本、上下文、章节、行号及比例。
-- 笔记及文件夹重命名/移动迁移会话记录，删除清理记录。
-- 不向笔记写入导航标记，只保存插件外观设置。
-- 生产构建、自动化测试、长笔记验收样本生成器和直接可复制的 release 包。
-
-验证边界：真实桌面和移动端/iOS UI 测试尚未完成，首次使用建议先在测试仓库按开发文档验收。
-
-公开发布准备补充：名称统一为 Read and Return，ID 为 read-and-return；保留 0.1.5，旧设置不自动迁移。
-
+Validation: production build, TypeScript checks, and 30 automated tests passed, including an 84,003-line Markdown fixture. Real-app acceptance testing for desktop Reading View, Live Preview/Source Mode, and mobile/iOS Reading View/editor remains pending. Automated tests do not establish visual accuracy on real devices.
