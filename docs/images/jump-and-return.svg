@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Take a detour. Keep your place.</title><desc id="desc">Temporary return points for long notes. Your reading position, Check the beginning, Continue where you left off.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101a32"/><stop offset="1" stop-color="#23385a"/></linearGradient></defs>
+<rect width="1200" height="620" rx="26" fill="url(#bg)"/>
+<g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+<text x="56" y="76" fill="#f5f7ff" font-size="36" font-weight="700">Take a detour. Keep your place.</text>
+<text x="56" y="115" fill="#b8c8e1" font-size="19">Temporary return points for long notes</text>
+<g fill="#dbeafe" font-size="20" font-weight="600"><text x="70" y="167">01  Read</text><text x="446" y="167">02  Jump to the top</text><text x="822" y="167">03  Return</text></g>
+<g fill="#f8fafc"><rect x="56" y="190" width="328" height="318" rx="18"/><rect x="432" y="190" width="328" height="318" rx="18"/><rect x="808" y="190" width="328" height="318" rx="18"/></g>
+<g stroke="#c6d1df" stroke-width="8" stroke-linecap="round">
+<path d="M82 220h180 M82 248h260 M82 276h228 M82 362h247 M82 390h205 M82 418h255 M82 446h182"/>
+<path d="M458 280h244 M458 308h216 M458 336h246 M458 364h205 M458 392h250 M458 420h170"/>
+<path d="M834 220h180 M834 248h260 M834 276h228 M834 362h247 M834 390h205 M834 418h255 M834 446h182"/>
+</g>
+<rect x="72" y="298" width="296" height="43" rx="8" fill="#dcfce7"/><rect x="824" y="298" width="296" height="43" rx="8" fill="#dcfce7"/>
+<path d="M84 311v18 M836 311v18" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+<g fill="#166534" font-size="18" font-weight="600"><text x="96" y="326">Your reading position</text><text x="848" y="326">Your reading position</text></g>
+<text x="458" y="241" fill="#27334d" font-size="23" font-weight="700">Check the beginning</text>
+<g fill="#6254d9"><rect x="268" y="438" width="96" height="48" rx="24"/><rect x="644" y="438" width="96" height="48" rx="24"/><rect x="1020" y="438" width="96" height="48" rx="24"/></g>
+<g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M292 474v-22m-7 7 7-7 7 7 M665 452l-7 7 7 7m-7-7h12q13 0 13 12 M1044 474v-22m-7 7 7-7 7 7"/></g>
+<g fill="#fff"><circle cx="332" cy="462" r="2"/><circle cx="339" cy="462" r="2"/><circle cx="346" cy="462" r="2"/><circle cx="708" cy="462" r="2"/><circle cx="715" cy="462" r="2"/><circle cx="722" cy="462" r="2"/><circle cx="1084" cy="462" r="2"/><circle cx="1091" cy="462" r="2"/><circle cx="1098" cy="462" r="2"/></g>
+<g stroke="#91a6c6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M396 348h24m-8-8 8 8-8 8 M772 348h24m-8-8 8 8-8 8"/></g>
+<g fill="#dbeafe" font-size="17"><text x="70" y="541">Your reading position</text><text x="446" y="541">Check the beginning</text><text x="822" y="541">Continue where you left off</text></g>
+<text x="56" y="589" fill="#b8c8e1" font-size="15">Workflow illustration · Session-only navigation · Markdown stays unchanged</text>
+</g></svg>
