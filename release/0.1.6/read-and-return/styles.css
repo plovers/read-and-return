@@ -1,0 +1,44 @@
+.read-and-return-host { position: relative; }
+.read-and-return-control {
+  position: absolute;
+  z-index: 20;
+  bottom: calc(var(--nn-bottom, 24px) + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 28px;
+  background: var(--background-primary);
+  box-shadow: 0 3px 16px rgb(0 0 0 / 16%);
+}
+.read-and-return-control.is-right { right: max(12px, env(safe-area-inset-right, 0px)); }
+.read-and-return-control.is-left { left: max(12px, env(safe-area-inset-left, 0px)); }
+/* Keep the entire control above the mobile floating navigation bar, including
+   existing installations whose saved bottom spacing is still 24px. */
+.read-and-return-control.is-mobile {
+  bottom: calc(max(var(--nn-bottom, 24px), 96px) + env(safe-area-inset-bottom, 0px));
+}
+.read-and-return-control button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  touch-action: manipulation;
+}
+.read-and-return-control .read-and-return-primary {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+.read-and-return-control .read-and-return-more { background: transparent; color: var(--text-muted); }
+.read-and-return-control button:focus-visible { outline: 2px solid var(--text-accent); outline-offset: 2px; }
+@media (hover: hover) {
+  .read-and-return-control .read-and-return-primary:hover { background: var(--interactive-accent-hover); }
+  .read-and-return-control .read-and-return-more:hover { background: var(--background-modifier-hover); }
+}

@@ -10,7 +10,7 @@ Read and Return adds temporary return points and position history to long Markdo
 
 **Mobile-first controls · Keyboard commands · No changes to your Markdown**
 
-> Publication status: this project is not yet listed in Community plugins. Version **0.1.5** is the planned first public snapshot; the declared minimum Obsidian version is **1.8.7**. Real-device acceptance testing is still pending.
+> Publication status: this project is not yet listed in Community plugins. The current version is **0.1.6**; the declared minimum Obsidian version is **1.8.7**. Real-device acceptance testing is still pending.
 
 ## A small control for a long note
 
@@ -38,7 +38,7 @@ Each note has its own return point and history. Renaming or moving a note or fol
 
 Until this project is published, install it manually in a test vault:
 
-1. Copy the entire [`release/0.1.5/read-and-return/`](release/0.1.5/read-and-return/) folder into `<your vault>/.obsidian/plugins/`.
+1. Copy the entire [`release/0.1.6/read-and-return/`](release/0.1.6/read-and-return/) folder into `<your vault>/.obsidian/plugins/`.
 2. Check that the plugin folder directly contains `manifest.json`, `main.js`, and `styles.css`.
 3. Reload Obsidian, open **Settings → Community plugins**, and enable the plugin.
 4. For mobile, place the same plugin files in the vault used by your phone and enable it there too.
@@ -86,7 +86,7 @@ npm ci
 npm run release
 ```
 
-This runs TypeScript checks, a production build, automated tests, and version/package consistency checks. The installable output is `release/0.1.5/read-and-return/`.
+This runs TypeScript checks, a production build, automated tests, and version/package consistency checks. The installable output is `release/0.1.6/read-and-return/`.
 
 Report issues with your Obsidian version, device/OS, view mode, theme, reproduction steps, and a small non-sensitive example note. Use this repository's Issues tab once published.
 

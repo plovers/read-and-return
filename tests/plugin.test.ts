@@ -55,6 +55,7 @@ async function harness(savedData: unknown = null, language = 'en') {
   const host = { Plugin, PluginSettingTab: class { containerEl = element(); }, MarkdownView: class {}, Platform: { isMobile: false },
     setIcon() {},
     Setting: class {
+      setHeading() { return this; }
       setName(value: string) { labels.push(value); return this; }
       setDesc(value: string) { labels.push(value); return this; }
       addToggle(cb: any) { cb(widget); return this; }

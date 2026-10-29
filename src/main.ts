@@ -203,7 +203,7 @@ class NavigatorSettings extends PluginSettingTab {
   constructor(app: App, private plugin: NoteNavigator) { super(app, plugin); }
   display() {
     this.containerEl.empty();
-    this.containerEl.createEl('h2', { text: 'Read and Return' });
+    new Setting(this.containerEl).setName('Read and Return').setHeading();
     this.containerEl.createEl('p', { text: t("Navigation stays in this session; note content is never changed.") });
     new Setting(this.containerEl).setName(t("Mobile control"))
       .addToggle(toggle => toggle.setValue(this.plugin.settings.mobileControl).onChange(async value => {

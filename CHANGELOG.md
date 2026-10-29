@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6
+
+- Use Obsidian's native Setting heading API in the settings tab to comply with community review requirements.
+
 ## 0.1.5 — Initial public release
 
 First public release of **Read and Return** (`read-and-return`).
